@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer  base{
+  body{
+    @apply bg-slate-400
+  }
+}
+
+.description-container {
+  position: relative;
+  height: 5rem; /* Set a fixed height */
+  overflow: hidden; /* Hide overflowing text */
+}
+
+.description-text {
+  height: 100%; /* Ensures the text occupies full height */
+  overflow-y: auto; /* Enable vertical scroll */
+}
+
+.fade-overlay {
+  
+  pointer-events: none; /* Allow clicks to pass through */
+}
+
+/* Custom transitions for Tailwind */
+.transition-transform {
+  transition: transform 0.3s ease-in-out;
+}
